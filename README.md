@@ -1,27 +1,18 @@
 # Statistical WI-based Ranging 
-The code in this repository implements the statistical range (and waveguide invariant) estimation methd proposed in Jang *et al.* (2025) along with other reference methods. The code is available to those who are interested in implementing the proposed method. 
+The code in this repository implements the statistical range (and waveguide invariant) estimation methd proposed in Jang *et al.* (2025) along with other reference methods. The code is available to those who are interested in implementing the proposed method. Since the data used is not publically available, the codes in this repository will not run properly.
 
 ## Description of each directories
 ### Acoustic Data
 Would contain the acoustic data (both real and simulated) to be processed. The data are not provide in this repository but see [Contacts](#contacts).
 
-### Figures (not available)
-Code for generating the figures presented in the paper 
-
 ### Libraries
 Functions that are used to process and perform range estimation based on the acoustic data.
 
 ### RealDataProcessing
-Scripts to perform ranging and WI estimation using the acoustic data. 
+Scripts to perform range estimation using the acoustic data are here. 
 
-### Results
-The results from running the scripts are saved in this directory.
-
-### SBCEX17_Preprocessing
-The raw acoustic data from SBCEX17 are processed. They are first decimated and saved as STFT at desired lengths 
-
-### SimulatedDataProcessing
-Scripts to perform ranging and WI estimation using the simulated acoustic data. It will also show how the acoustic data generated using a mode-based simulation program KRAKEN was further used to generate the simulated signal. To run KRAKEN, please see [the acoustic toolbox](http://oalib.hlsresearch.com/AcousticsToolbox/). The MATLAB version was utilized.
+### RealDataProcessing
+Scripts to perform WI estimation and analysis (pairwise) using the acoustic data exist here. 
 
 ## References
 The proposed method is presented in 
