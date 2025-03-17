@@ -1,5 +1,5 @@
 # Statistical WI-based Ranging 
-The code in this repository implements the statistical range (and waveguide invariant) estimation methd proposed in Jang *et al.* (2025) along with other reference methods. The code is available to those who are interested in implementing the proposed method. Since the data used is not publically available, the codes in this repository will not run properly.
+The code in this repository implements the statistical range (and waveguide invariant) estimation methd proposed in Jang *et al.* (2025) along with other reference methods. The code is available to those who are interested in implementing the proposed method. Since the data used is not publically available, the codes in this repository will not run properly. One could generate a spectrogram using a simulator, e.g., KRAKEN, to process it.
 
 ## Description of each directories
 ### Acoustic Data
