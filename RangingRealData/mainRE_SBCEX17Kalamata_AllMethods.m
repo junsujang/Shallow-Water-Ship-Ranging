@@ -114,15 +114,11 @@ for n=26:numSpectrograms  % 26:numSpectrograms
     [fInterest,isTones,tonalF,curZ] = getTonalFrequencies(f,f1,f2,isEvenFreq,removeLeakage,Z);
     minNumFreqProjections = numel(fInterest);   % minimum number of frequencies that are required to have valid intensities
     refFreqIdx = floor(numel(fInterest)/2);     % the reference frequency for nonlinear transformation
-    % fInterest
-    % curZ = Z(fFilter,:).';
     fprintf("Time step, n=%d\n",n);
-    % rHyp(1) = rTrue(end);
     [rMLAllMethods,tM,LLAll2] = estimateRangeAllMethods(curZ,rPotential,rHyp,fInterest,refFreqIdx,...
                                             betaML,minNumFreqProjections,isTones,...
                                             methodREs,methodIdxs,MM,nc2ParamHyp,backgroundNoiseVar);
     rML(:,n) = rMLAllMethods;
-    % tonalF
     rTrueRef(n) = rTrue(end);
     
     % Align the current rShift with the global rShift range.
